@@ -91,9 +91,24 @@
         font-style: italic;
       }
 
+      .byline {
+        margin: 18px 0 0 clamp(2.25rem, 4.6vw, 4.4rem);
+        color: #777b8f;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          monospace;
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+        white-space: nowrap;
+      }
+
+      .byline strong {
+        color: var(--ink);
+        font-weight: 600;
+      }
+
       .lede {
         max-width: 420px;
-        margin: 30px 0 24px;
+        margin: 24px 0;
         color: var(--muted);
         font-size: 0.98rem;
         line-height: 1.7;
@@ -551,6 +566,7 @@
         <section class="game-intro" aria-labelledby="game-title">
           <p class="eyebrow">THREE PLAYERS · ONE EDGELESS BOARD</p>
           <h1 id="game-title">Tic Tac <span>Torus</span></h1>
+          <p class="byline"><span>By</span> <strong>Hasan M. El-Hasan</strong></p>
           <p class="lede">
             Take turns placing X, O, and △ on the 5 × 9 board. Get four in a
             row—horizontal, vertical, or diagonal. Lines may continue across
